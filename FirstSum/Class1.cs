@@ -15,8 +15,8 @@ namespace FirstSum
             double y = 0;
             do
             {
-                Console.WriteLine("Give a value between 0 and 100");
                 x = x + y;
+                Console.WriteLine("Give a value between 0 and 100");
                 y = double.Parse(Console.ReadLine());
                 if ((y >= 0) && (y <= 100))
                 {
@@ -27,7 +27,7 @@ namespace FirstSum
                     val--;
                 }
                 val++;
-            } while (val < 10);
+            } while (val < 11);
             Console.WriteLine($"The total sum is {x}");
             return x;
         }
