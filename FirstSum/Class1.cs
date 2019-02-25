@@ -34,49 +34,48 @@ namespace FirstSum
 
         public double Grades(double value)
         {
+            double count = 0;
+            double sum = 0;
             double val = 0;
-            double x = 0;
-            double y = 0;
             do
             {
+                sum = sum + val;
                 Console.WriteLine("Give a value between 0 and 100");
-                x = x + y;
-                y = double.Parse(Console.ReadLine());
-                if ((y >= 0) && (y <= 100))
-                {
-
+                val = double.Parse(Console.ReadLine());
+                if ((val >= 0) && (val <= 100))
+                { 
                 }
                 else
                 {
                     Console.WriteLine("Incorrect number input");
-                    y = 0;
-                    val--;
+                    val = 0;
+                    count--;
                 }
-                val++;
-            } while (val < 10);
+                count++;
+            } while (count < 10);
 
-            double z = x / val;
-            if ((z <= 90) && (z >= 100))
+            double grade = sum / count;
+            if ((grade <= 90) && (grade >= 100))
             {
-                Console.WriteLine($"Overall grade is an {z}, which is an 'A'");
+                Console.WriteLine($"Overall grade is an {grade}, which is an 'A'");
             }
-            if ((z <= 80) && (z >= 89))
+            if ((grade <= 80) && (grade >= 89))
             {
-                Console.WriteLine($"Overall grade is an {z}, which is an 'D'");
+                Console.WriteLine($"Overall grade is an {grade}, which is an 'D'");
             }
-            if ((z <= 60) && (z >= 79))
+            if ((grade <= 60) && (grade >= 79))
             {
-                Console.WriteLine($"Overall grade is an {z}, which is an 'C'");
+                Console.WriteLine($"Overall grade is an {grade}, which is an 'C'");
             }
-            if ((z <= 50) && (z >= 69))
+            if ((grade <= 50) && (grade >= 69))
             {
-                Console.WriteLine($"Overall grade is an {z}, which is an 'D'");
+                Console.WriteLine($"Overall grade is an {grade}, which is an 'D'");
             }
             else
             {
-                Console.WriteLine($"Overall grade is an {z}, which is an 'F'");
+                Console.WriteLine($"Overall grade is an {grade}, which is an 'F'");
             }
-            return z;
+            return grade;
         }
     }
 }
