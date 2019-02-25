@@ -13,6 +13,8 @@ namespace CalcAverage
         {
             SumFirst totalSum = new SumFirst();
             totalSum.Sum(0);
+
+            totalSum.Grades(0);
         }
     }
 }

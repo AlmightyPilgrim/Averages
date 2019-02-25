@@ -34,7 +34,28 @@ namespace FirstSum
 
         public double Grades(double value)
         {
-            double z = Sum(0) / 10;
+            double val = 0;
+            double x = 0;
+            double y = 0;
+            do
+            {
+                Console.WriteLine("Give a value between 0 and 100");
+                x = x + y;
+                y = double.Parse(Console.ReadLine());
+                if ((y >= 0) && (y <= 100))
+                {
+
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect number input");
+                    y = 0;
+                    val--;
+                }
+                val++;
+            } while (val < 10);
+
+            double z = x / val;
             if ((z <= 90) && (z >= 100))
             {
                 Console.WriteLine($"Overall grade is an {z}, which is an 'A'");
@@ -51,7 +72,7 @@ namespace FirstSum
             {
                 Console.WriteLine($"Overall grade is an {z}, which is an 'D'");
             }
-            if ((z <= 0) && (z >= 49))
+            else
             {
                 Console.WriteLine($"Overall grade is an {z}, which is an 'F'");
             }
