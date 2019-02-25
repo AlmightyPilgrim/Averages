@@ -3,21 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FirstSum;
 
 namespace InputNumTest
 {
     public class TeacherInput
     {
-        public double Grade(double value)
+        public double Grade(double count)
         {
-            double count = 0;
             double track = 0;
             double sum = 0;
             double val = 0;
             double grade;
-            Console.WriteLine("How many tests will be inputted?");
-            count = double.Parse(Console.ReadLine());
-            while(track > count)
+            while(track < count)
             {
                 sum = sum + val;
                 Console.WriteLine("Input Test Score");
@@ -36,8 +34,27 @@ namespace InputNumTest
             }
 
             grade = sum / count;
-            
-            return sum;
+            if ((grade <= 90) && (grade >= 100))
+            {
+                Console.WriteLine($"Overall grade is an {grade}, which is an 'A'");
+            }
+            if ((grade <= 80) && (grade >= 89))
+            {
+                Console.WriteLine($"Overall grade is an {grade}, which is an 'D'");
+            }
+            if ((grade <= 60) && (grade >= 79))
+            {
+                Console.WriteLine($"Overall grade is an {grade}, which is an 'C'");
+            }
+            if ((grade <= 50) && (grade >= 69))
+            {
+                Console.WriteLine($"Overall grade is an {grade}, which is an 'D'");
+            }
+            else
+            {
+                Console.WriteLine($"Overall grade is an {grade}, which is an 'F'");
+            }
+            return grade;
         }
     }
 }

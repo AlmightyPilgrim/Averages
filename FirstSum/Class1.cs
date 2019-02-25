@@ -8,39 +8,39 @@ namespace FirstSum
 {
     public class SumFirst
     {
-        public double Sum (double value)
+        public double Sum (double count)
         {
+            double sum = 0;
             double val = 0;
-            double x = 0;
-            double y = 0;
-            while (val < 10)
+            double track = 0;
+            while (track < count)
             {
-                x = x + y;
+                sum = sum + val;
                 Console.WriteLine("Give a value between 0 and 100");
-                y = double.Parse(Console.ReadLine());
-                if ((y >= 0) && (y <= 100))
+                val = double.Parse(Console.ReadLine());
+                if ((val >= 0) && (val <= 100))
                 {
 
                 } else {
                     Console.WriteLine("Incorrect number input");
-                    y = 0;
-                    val--;
+                    val = 0;
+                    track--;
                 }
-                val++;
+                track++;
             } ;
-            Console.WriteLine($"The total sum is {x}");
-            return x;
+            Console.WriteLine($"The total sum is {sum}");
+            return sum;
         }
 
-        public double Grades(double value)
+        public double Grades(double count)
         {
-            double count = 0;
+            double track = 0;
             double sum = 0;
             double val = 0;
-            while (count < 10)
+            while (track < 10)
             {
                 sum = sum + val;
-                Console.WriteLine("Give a value between 0 and 100");
+                Console.WriteLine("Input scores");
                 val = double.Parse(Console.ReadLine());
                 if ((val >= 0) && (val <= 100))
                 { 
@@ -49,9 +49,9 @@ namespace FirstSum
                 {
                     Console.WriteLine("Incorrect number input");
                     val = 0;
-                    count--;
+                    track--;
                 }
-                count++;
+                track++;
             }
 
             double grade = sum / count;

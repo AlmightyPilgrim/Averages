@@ -13,12 +13,15 @@ namespace CalcAverage
         static void Main(string[] args)
         {
             SumFirst totalSum = new SumFirst();
-            totalSum.Sum(0);
-
-            totalSum.Grades(0);
+            Console.WriteLine("Enter number of values to be inputted");
+            double count = double.Parse(Console.ReadLine());
+            totalSum.Sum(count);
+            totalSum.Grades(count);
 
             TeacherInput teacherGrade = new TeacherInput();
-            teacherGrade.Grade(0);
+            Console.WriteLine("Enter number of tests to be averaged");
+            count = double.Parse(Console.ReadLine());
+            teacherGrade.Grade(count);
         }
     }
 }
