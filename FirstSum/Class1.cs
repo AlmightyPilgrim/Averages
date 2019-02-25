@@ -13,7 +13,7 @@ namespace FirstSum
             double val = 0;
             double x = 0;
             double y = 0;
-            do
+            while (val < 10)
             {
                 x = x + y;
                 Console.WriteLine("Give a value between 0 and 100");
@@ -27,7 +27,7 @@ namespace FirstSum
                     val--;
                 }
                 val++;
-            } while (val < 11);
+            } ;
             Console.WriteLine($"The total sum is {x}");
             return x;
         }
@@ -37,7 +37,7 @@ namespace FirstSum
             double count = 0;
             double sum = 0;
             double val = 0;
-            do
+            while (count < 10)
             {
                 sum = sum + val;
                 Console.WriteLine("Give a value between 0 and 100");
@@ -52,7 +52,7 @@ namespace FirstSum
                     count--;
                 }
                 count++;
-            } while (count < 10);
+            }
 
             double grade = sum / count;
             if ((grade <= 90) && (grade >= 100))
