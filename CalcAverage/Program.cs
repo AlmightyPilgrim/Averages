@@ -16,6 +16,9 @@ namespace CalcAverage
             totalSum.Sum(0);
 
             totalSum.Grades(0);
+
+            TeacherInput teacherGrade = new TeacherInput();
+            teacherGrade.Grade(0);
         }
     }
 }

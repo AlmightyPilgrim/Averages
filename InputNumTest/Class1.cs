@@ -8,15 +8,16 @@ namespace InputNumTest
 {
     public class TeacherInput
     {
-        public double Sum(double value)
+        public double Grade(double value)
         {
             double count = 0;
+            double track = 0;
             double sum = 0;
             double val = 0;
             double grade;
             Console.WriteLine("How many tests will be inputted?");
             count = double.Parse(Console.ReadLine());
-            while(count < count + 1)
+            while(track > count)
             {
                 sum = sum + val;
                 Console.WriteLine("Input Test Score");
@@ -29,9 +30,9 @@ namespace InputNumTest
                 {
                     Console.WriteLine("Incorrect number input");
                     val = 0;
-                    count--;
+                    track--;
                 }
-                count++;
+                track++;
             }
 
             grade = sum / count;
