@@ -58,6 +58,10 @@
       <Project>{523d0354-a270-419e-8377-7ccbac603ee3}</Project>
       <Name>InputNumTest</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Nonspecific\Nonspecific.csproj">
+      <Project>{6601e3be-24d7-4f42-9cb8-e4a037f32c87}</Project>
+      <Name>Nonspecific</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

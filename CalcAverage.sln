@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstSum", "FirstSum\FirstS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputNumTest", "InputNumTest\InputNumTest.csproj", "{523D0354-A270-419E-8377-7CCBAC603EE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nonspecific", "Nonspecific\Nonspecific.csproj", "{6601E3BE-24D7-4F42-9CB8-E4A037F32C87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{523D0354-A270-419E-8377-7CCBAC603EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{523D0354-A270-419E-8377-7CCBAC603EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{523D0354-A270-419E-8377-7CCBAC603EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6601E3BE-24D7-4F42-9CB8-E4A037F32C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6601E3BE-24D7-4F42-9CB8-E4A037F32C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6601E3BE-24D7-4F42-9CB8-E4A037F32C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6601E3BE-24D7-4F42-9CB8-E4A037F32C87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FirstSum;
 using InputNumTest;
+using Nonspecific;
 
 namespace CalcAverage
 {
@@ -22,6 +23,9 @@ namespace CalcAverage
             Console.WriteLine("Enter number of tests to be averaged");
             count = double.Parse(Console.ReadLine());
             teacherGrade.Grade(count);
+
+            Average randomTest = new Average();
+            randomTest.Grade(0);
         }
     }
 }

@@ -37,7 +37,7 @@ namespace FirstSum
             double track = 0;
             double sum = 0;
             double val = 0;
-            while (track < 10)
+            while (track < count)
             {
                 sum = sum + val;
                 Console.WriteLine("Input scores");
