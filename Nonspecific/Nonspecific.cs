@@ -32,7 +32,10 @@ namespace Nonspecific
                     track--;
                 }
                 track++;
-                Console.WriteLine("Are there more tests? 1-yes 2-no");
+                Console.WriteLine("Are there more tests?");
+                string prompt = "Options:\n\t1 - Yes\n\t2 - No\nChoice: ";
+
+                Console.WriteLine(prompt);
                 checker = int.Parse(Console.ReadLine());
             }
 

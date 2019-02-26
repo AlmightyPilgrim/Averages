@@ -70,11 +70,11 @@ namespace FirstSum
             {
                 Console.WriteLine($"Overall grade is an {grade}, which is an 'D'");
             }
-            else if ((grade >= 60) && (grade <= 79))
+            else if ((grade >= 70) && (grade <= 79))
             {
                 Console.WriteLine($"Overall grade is an {grade}, which is an 'C'");
             }
-            else if ((grade >= 50) && (grade <= 69))
+            else if ((grade >= 60) && (grade <= 69))
             {
                 Console.WriteLine($"Overall grade is an {grade}, which is an 'D'");
             }
