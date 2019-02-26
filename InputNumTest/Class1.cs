@@ -9,17 +9,17 @@ namespace InputNumTest
 {
     public class TeacherInput
     {
-        public double Grade(double count)
+        public int Grade(int count)
         {
-            double track = 0;
-            double sum = 0;
-            double val = 0;
-            double grade;
+            int track = 0;
+            int sum = 0;
+            int val = 0;
+            int grade;
             while(track < count)
             {
                 
                 Console.WriteLine("Input Test Score");
-                val = double.Parse(Console.ReadLine());
+                val = int.Parse(Console.ReadLine());
                 if ((val >= 0) && (val <= 100))
                 {
 
@@ -35,26 +35,8 @@ namespace InputNumTest
             }
 
             grade = sum / count;
-            if ((grade <= 90) && (grade >= 100))
-            {
-                Console.WriteLine($"Overall grade is an {grade}, which is an 'A'");
-            }
-            if ((grade <= 80) && (grade >= 89))
-            {
-                Console.WriteLine($"Overall grade is an {grade}, which is an 'D'");
-            }
-            if ((grade <= 60) && (grade >= 79))
-            {
-                Console.WriteLine($"Overall grade is an {grade}, which is an 'C'");
-            }
-            if ((grade <= 50) && (grade >= 69))
-            {
-                Console.WriteLine($"Overall grade is an {grade}, which is an 'D'");
-            }
-            else
-            {
-                Console.WriteLine($"Overall grade is an {grade}, which is an 'F'");
-            }
+            SumFirst gradeSum = new SumFirst();
+            gradeSum.TotalGrade(grade);
             return grade;
         }
     }

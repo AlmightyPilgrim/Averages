@@ -57,43 +57,24 @@ namespace FirstSum
             }
 
             int grade = sum / count;
-            if ((grade <= 90) && (grade >= 100))
-            {
-                Console.WriteLine($"Overall grade is an {grade}, which is an 'A'");
-            }
-            if ((grade <= 80) && (grade >= 89))
-            {
-                Console.WriteLine($"Overall grade is an {grade}, which is an 'D'");
-            }
-            if ((grade <= 60) && (grade >= 79))
-            {
-                Console.WriteLine($"Overall grade is an {grade}, which is an 'C'");
-            }
-            if ((grade <= 50) && (grade >= 69))
-            {
-                Console.WriteLine($"Overall grade is an {grade}, which is an 'D'");
-            }
-            else
-            {
-                Console.WriteLine($"Overall grade is an {grade}, which is an 'F'");
-            }
+            TotalGrade(grade);
             return grade;
         }
-        public int totalGrade (int grade)
+        public int TotalGrade (int grade)
         {
-            if ((grade <= 90) && (grade >= 100))
+            if ((grade >= 90) && (grade <= 100))
             {
                 Console.WriteLine($"Overall grade is an {grade}, which is an 'A'");
-            }
-            if ((grade <= 80) && (grade >= 89))
+            } 
+            else if ((grade >= 80) && (grade <= 89))
             {
                 Console.WriteLine($"Overall grade is an {grade}, which is an 'D'");
             }
-            if ((grade <= 60) && (grade >= 79))
+            else if ((grade >= 60) && (grade <= 79))
             {
                 Console.WriteLine($"Overall grade is an {grade}, which is an 'C'");
             }
-            if ((grade <= 50) && (grade >= 69))
+            else if ((grade >= 50) && (grade <= 69))
             {
                 Console.WriteLine($"Overall grade is an {grade}, which is an 'D'");
             }

@@ -15,16 +15,17 @@ namespace CalcAverage
         {
             SumFirst totalSum = new SumFirst();
             Console.WriteLine("Enter number of values to be inputted");
-            double count = double.Parse(Console.ReadLine());
+            int count = int.Parse(Console.ReadLine());
             totalSum.Sum(count);
             totalSum.Grades(count);
 
             TeacherInput teacherGrade = new TeacherInput();
             Console.WriteLine("Enter number of tests to be averaged");
-            count = double.Parse(Console.ReadLine());
+            count = int.Parse(Console.ReadLine());
             teacherGrade.Grade(count);
 
             Average randomTest = new Average();
+            Console.WriteLine("Please being entering scores");
             randomTest.Grade(0);
         }
     }
