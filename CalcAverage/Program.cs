@@ -25,7 +25,7 @@ namespace CalcAverage
             teacherGrade.Grade(count);
 
             Average randomTest = new Average();
-            Console.WriteLine("Please being entering scores");
+            Console.WriteLine("Please begin entering scores");
             randomTest.Grade(0);
         }
     }
