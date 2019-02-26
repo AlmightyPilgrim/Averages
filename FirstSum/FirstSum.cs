@@ -62,6 +62,24 @@ namespace FirstSum
         }
         public int TotalGrade (int grade)
         {
+            /* switch (grade)
+            {
+                case 1:
+                    (grade >= 90) && (grade <= 100);
+                    break;
+                case 2:
+                    (grade >= 80) && (grade <= 89);
+                    break;
+                case 3:
+                    (grade >= 70) && (grade <= 79);
+                    break;
+                case 4:
+                    (grade >= 60) && (grade <= 69);
+                    break;
+                default:
+
+                    break;
+            } */
             if ((grade >= 90) && (grade <= 100))
             {
                 Console.WriteLine($"Overall grade is an {grade}, which is an 'A'");
