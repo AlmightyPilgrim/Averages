@@ -17,7 +17,7 @@ namespace InputNumTest
             double grade;
             while(track < count)
             {
-                sum = sum + val;
+                
                 Console.WriteLine("Input Test Score");
                 val = double.Parse(Console.ReadLine());
                 if ((val >= 0) && (val <= 100))
@@ -30,6 +30,7 @@ namespace InputNumTest
                     val = 0;
                     track--;
                 }
+                sum = sum + val;
                 track++;
             }
 
