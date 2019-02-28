@@ -16,13 +16,11 @@ namespace InputNumTest
             int val = 0;
             int grade;
             while(track < count)
-            {
-                
+            {                
                 Console.WriteLine("Input Test Score");
                 val = int.Parse(Console.ReadLine());
                 if ((val >= 0) && (val <= 100))
                 {
-
                 }
                 else
                 {
